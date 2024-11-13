@@ -1,5 +1,5 @@
 CMS-övning:
-Övning 1
+Övning 1 // klar
 skapa två variabler och en array med minst tre
 lagrade värden.
 Skriv ut en mening till skärmen innehållandes
@@ -13,7 +13,7 @@ om ett tal är ett primtal. (Primtal är ett nummer
 som är större än ett och som inte kan delas
 jämnt med något annat tal än 1 eller sig själv.)
 
-Övning 3
+Övning 3 //klar
 Skapa en funktion som tar emot en associativ
 array med nycklarna "bord", "frukt" och "extra".
 Den ska returnera en sträng som förklarar för
