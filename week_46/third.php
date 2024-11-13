@@ -8,7 +8,7 @@
     <title>PHP-test</title>
   </head>
   <body>
-    <h2>index.php</h2>
+    <h2>Uppgift 3</h2>
     <?php
 
 $age = 19;

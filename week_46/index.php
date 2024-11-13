@@ -8,14 +8,14 @@
     <title>PHP-test</title>
   </head>
   <body>
-    <h2>index.php</h2>
+    <h2>Uppgift 1</h2>
     <?php
     $array = ['soppa', 'hamburgare', 'kladdkaka'];
     $arrayFavourite = implode(", " , $array);
     $name = "Sara";
     $lastName = "Lindholm";
 
-    sl_debug_($array);
+    // sl_debug_($array);
     ?>
     <br><br>
     <?php
