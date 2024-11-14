@@ -61,4 +61,51 @@ function sl_use_subtration($number) {
     echo "<li> $number - $x = $sum </li><br>";
   }
   echo "</ul>";
+};
+ function sl_greeting() {
+//hämtar aktuell klockslag..
+$currentTime = date("H");
+
+if ($currentTime <= 10) {
+  $index = 0;
+} elseif ($currentTime <= 12) {
+  $index = 1;
+} elseif ($currentTime <= 17) {
+  $index = 2;
+} else {
+ $index = 3;
+}
+
+$greetings = [
+  "God morgon, hoppas du känner dig utvilad!",
+  "God förmiddag, hoppas lunchen var god!",
+  "God eftermiddag!",
+  "God kväll! Hoppas du haft en produktiv dag."
+];
+
+echo "<h4> $greetings[$index]</h4>";
+};
+
+function sl_get_daily_date() {
+  $currentDate = date("j");
+  $evenOrOddDate = ($currentDate % 2 == 0) ? "jämnt" : "udda";
+
+  // Hämtar aktuell veckodagindex 0-6
+  $currentDay = date("w");
+
+  // skapar en array som kan användas för att omvandla veckodagsindex till aktuell dag
+  $weekdaysArray = [
+    "Söndag",
+    "Måndag",
+    "Tisdag",
+    "Onsdag",
+    "Torsdag",
+    "Fredag",
+    "Lördag" ];
+  //skapar en variabel som består av arrayen och väljer aktuell dah beroende på index
+  $day = $weekdaysArray[$currentDay];
+
+  // echo "<h3> $greetings[$index]</h3>";
+  echo  "<p> Idag är det " . $day  . " den" . date("j F") . "</p>";
+  echo  "<p>Den " . date("j F") . " är ett " . $evenOrOddDate . " datum.</p>";
 }
