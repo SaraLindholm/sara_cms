@@ -10,18 +10,18 @@
 <?php sl_get_header() ?>
 <body class="bg-success p-2 bg-opacity-50">
   <div class="container text-center mt-5">
-    <h3>Sida2</h3>
+    <h3>Matematik</h3>
 </div>
 <div class="container text-start">
   <div class="row align-items-start">
       <div class="col border-start">
-        <?php  sl_use_subtration(4); ?>
+        <?php  sl_use_addition(4); ?>
       </div>
       <div class="col border-start">
-        <?php  sl_use_subtration(8); ?>
+        <?php  sl_use_addition(8); ?>
       </div>
       <div class="col border-start">
-        <?php  sl_use_subtration(9); ?>
+        <?php  sl_use_addition(9); ?>
       </div>
   </div></div>
 

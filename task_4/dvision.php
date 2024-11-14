@@ -10,7 +10,7 @@
 <?php sl_get_header() ?>
 <body class="bg-success p-2 bg-opacity-50">
   <div class="container text-center mt-5">
-    <h3>Sida2</h3>
+    <h3>Matematik</h3>
 </div>
 <div class="container text-start">
   <div class="row align-items-start">

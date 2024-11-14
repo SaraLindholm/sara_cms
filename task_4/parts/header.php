@@ -18,17 +18,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="page1.php">Dagens Datum</a>
+            <a class="nav-link" href="dailyDate.php">Dagens Datum</a>
           </li>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Matematik
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="page2.php">Multiplikation</a></li>
-            <li><a class="dropdown-item" href="page3.php">Addition</a></li>
-            <li><a class="dropdown-item" href="page4.php">Subtraktion</a></li>
-            <li><a class="dropdown-item" href="page5.php">Division</a></li>
+            <li><a class="dropdown-item" href="multiplication.php">Multiplikation</a></li>
+            <li><a class="dropdown-item" href="addition.php">Addition</a></li>
+            <li><a class="dropdown-item" href="subtraction.php">Subtraktion</a></li>
+            <li><a class="dropdown-item" href="division.php">Division</a></li>
           </ul>
         </li>
 
