@@ -5,12 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <?php
 sl_get_header()
 ?>
-  <h5>Webbplats med PHP</h5>
+  <div class="container d-flex justify-content-center mt-5">
+    <div class="col-md-6">
+      <h5>Webbplats med PHP, välkommna!</h5><br>
+
+
+
+
   <?php
   //hämtar aktuell klockslag..
   $currentTime = date("H");
@@ -27,13 +34,15 @@ sl_get_header()
 
   $greetings = [
     "God morgon, hoppas du känner dig utvilad!",
-    "God förmiddag, snart är det lunch!",
+    "God förmiddag, hoppas lunchen var god!",
     "God eftermiddag!",
     "God kväll! Hoppas du haft en produktiv dag."
   ];
 
-  echo "<h3> $greetings[$index]</h3>";
+  echo "<h4> $greetings[$index]</h4>";
   ?>
+    </div>
+  </div>
 </body>
 <?php sl_get_footer() ?>
 </html>
