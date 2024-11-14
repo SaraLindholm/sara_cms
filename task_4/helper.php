@@ -15,3 +15,13 @@ function sl_get_header() {
 function sl_get_footer() {
   include('parts/footer.php');
 };
+
+function sl_use_multiplication($number) {
+  echo "Multiplikations-tabellen med siffran " . $number . "<ul>";
+  for($x = 1; $x <= 10; $x ++) {
+  $muliNumber = $x * $number;
+  echo "<li>" . $number . " * " . $x . " = " . $muliNumber . "</li><br>";
+  }
+  echo "</ul>";
+
+};

@@ -10,7 +10,11 @@
 <body>
   <h3>Sida2</h3>
   <?php
-  echo "Gångertabellen"
+
+
+
+ sl_use_multiplication(4);
+ sl_use_multiplication(32)
   ?>
 </body>
 <?php sl_get_footer() ?>
