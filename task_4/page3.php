@@ -15,13 +15,13 @@
 <div class="container text-start">
   <div class="row align-items-start">
       <div class="col border-start">
-        <?php  sl_use_multiplication(4); ?>
+        <?php  sl_use_addition(4); ?>
       </div>
       <div class="col border-start">
-        <?php  sl_use_multiplication(8); ?>
+        <?php  sl_use_addition(8); ?>
       </div>
       <div class="col border-start">
-        <?php  sl_use_multiplication(9); ?>
+        <?php  sl_use_addition(9); ?>
       </div>
   </div></div>
 

@@ -1,6 +1,6 @@
 
 </body>
-<footer>
+<footer class="text-end">
   <?php
   echo "<br><br> Sara Lindholm " . date("Y");
 

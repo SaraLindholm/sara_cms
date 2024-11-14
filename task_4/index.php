@@ -5,19 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
-<body>
+<body class="bg-success p-2 bg-opacity-50">
 <?php
-sl_get_header()
+sl_get_header();
+sl_get_navbar()
 ?>
   <div class="container d-flex justify-content-center mt-5">
     <div class="col-md-6">
-      <h5>Webbplats med PHP, välkommna!</h5><br>
-
-
-
-
+      <h5>Välkommna</h5><br>
   <?php
   //hämtar aktuell klockslag..
   $currentTime = date("H");
