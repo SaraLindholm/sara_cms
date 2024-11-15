@@ -1,4 +1,7 @@
-<?php include 'helper.php'
+<?php include 'helper.php';
+
+$name = $_POST['name'];
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +17,16 @@ sl_get_navbar()
 ?>
   <div class="container d-flex justify-content-center mt-5">
     <div class="col-md-6">
-      <h5>Välkommna</h5><br>
-  <?php
-  sl_greeting()
-  ?>
+      <h4>Välkommna</h4><br>
+      <form action="index.php" method="post">
+        <div class="mb-5">
+        <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+      <?php sl_greeting($name); ?>
     </div>
   </div>
 </body>

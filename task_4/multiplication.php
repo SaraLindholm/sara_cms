@@ -1,4 +1,7 @@
-<?php include 'helper.php' ?>
+<?php include 'helper.php';
+
+$number = $_POST['number'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,17 +14,21 @@
 <body class="bg-success p-2 bg-opacity-50">
   <div class="container text-center mt-5">
     <h3>Matematik</h3>
-</div>
+  </div>
+
 <div class="container text-start">
+
   <div class="row align-items-start">
+  <form action="multiplication.php" method="post">
+        <div class="mb-3 col-md-2">
+        <label for="number" class="form-label">Ange tabell</label>
+          <input type="number" class="form-control" id="number" name="number">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
       <div class="col border-start">
-        <?php  sl_use_multiplication(4); ?>
-      </div>
-      <div class="col border-start">
-        <?php  sl_use_multiplication(8); ?>
-      </div>
-      <div class="col border-start">
-        <?php  sl_use_multiplication(9); ?>
+        <?php  sl_use_multiplication($number); ?>
       </div>
   </div></div>
 

@@ -29,8 +29,8 @@ function sl_get_footer() {
 function sl_use_multiplication($number) {
   echo "Multiplikations-tabellen med siffran " . $number . "<ul>";
   for($x = 1; $x <= 10; $x ++) {
-  $muliNumber = $x * $number;
-  echo "<li>" . $number . " * " . $x . " = " . $muliNumber . "</li><br>";
+  $sum = $x * $number;
+  echo "<li> $number * $x = $sum </li><br>";
   }
   echo "</ul>";
 
@@ -62,7 +62,7 @@ function sl_use_subtration($number) {
   }
   echo "</ul>";
 };
- function sl_greeting() {
+ function sl_greeting($name = "JaneDoe") {
 //hämtar aktuell klockslag..
 $currentTime = date("H");
 
@@ -77,13 +77,13 @@ if ($currentTime <= 10) {
 }
 
 $greetings = [
-  "God morgon, hoppas du känner dig utvilad!",
-  "God förmiddag, hoppas lunchen var god!",
-  "God eftermiddag!",
-  "God kväll! Hoppas du haft en produktiv dag."
+  "God morgon, hoppas du känner dig utvilad ",
+  "God förmiddag, hoppas lunchen var god ",
+  "God eftermiddag ",
+  "God kväll! Hoppas du haft en produktiv dag "
 ];
 
-echo "<h4> $greetings[$index]</h4>";
+echo "<h5> $greetings[$index] $name!</h5>";
 };
 
 function sl_get_daily_date() {
