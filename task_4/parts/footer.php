@@ -1,8 +1,8 @@
 
 </body>
-<footer class="text-end">
+<footer class="text-center">
   <?php
-  echo "<br><br> Sara Lindholm " . date("Y");
+  echo "<br><br> Sara Lindholm &copy" . date("Y");
 
   ?></footer>
 </html>

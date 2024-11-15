@@ -25,10 +25,11 @@
            Matematik
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="multiplication.php">Multiplikation</a></li>
             <li><a class="dropdown-item" href="addition.php">Addition</a></li>
-            <li><a class="dropdown-item" href="subtraction.php">Subtraktion</a></li>
             <li><a class="dropdown-item" href="division.php">Division</a></li>
+            <li><a class="dropdown-item" href="multiplication.php">Multiplikation</a></li>
+            <li><a class="dropdown-item" href="subtraction.php">Subtraktion</a></li>
+
           </ul>
         </li>
 

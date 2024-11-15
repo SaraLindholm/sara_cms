@@ -7,9 +7,7 @@
 Öppna ditt tidigare projekt från övning 4. Skapa en ny undersida (undersida 3). Vidareutveckla sedan
 de olika undersidorna enligt följande:
 
-###Startsida
-Skapa ett enkelt formulär där användaren kan mata in sitt namn, och skriv sedan ut det inmatade
-namnet tillsammans med välkomsthälsningen. Till exempel “God kväll Oskar.”
+
 
 ###Undersida 1
 Komplettera undersida 1 med en datumväljare. När användaren väljer ett valfritt datum ska texten
@@ -17,10 +15,10 @@ anpassas efter det inmatade datumet istället för att visa dagens datum. (Till 
 väljer den 21 december ska texten bli “den 21 december är ett udda datum”).
 
 ###Undersida 2
-Lägg in ett formulär där användaren kan välja vilken multiplikationstabell som ska skrivas ut. Till
+//Lägg in ett formulär där användaren kan välja vilken multiplikationstabell som ska skrivas ut. Till
 exempel om användaren anger “5” i inmatningsfältet ska 5:ans multiplikationstabell skrivas ut vid
 klick på submit-knappen, osv. Implementera också någon form av datakontroll som gör att endast
-siffror mellan 1-9 kan anges i inmatningsfältet.
+siffror mellan 1-9 kan anges i inmatningsfältet. (LÄGG TILL KONTROLL FÖR VÄRDE MELLAN 1-9)
 
 ###Undersida 3 (ny undersida för denna uppgift)
 På denna undersida ska en kalkylator för elpris skapas. Börja med att skapa ett formulär med
@@ -30,8 +28,8 @@ formatering och valuta. Exempelvis: “Det beräknade elpriset blir 920 kronor�
 formulär och utskrift blir användarvänlig.
 Symbolisera gärna motsvarande hur många hästar som behöver jobba hur många timmar för samma wH.
 
-###Sidhuvud och sidfot
-Lämnas som de var i föregående övningsuppgift eller utvecklas efter behov.
+// ###Sidhuvud och sidfot
+Lämnas som de var i föregående övningsuppgift eller utvecklas efter behov.//klart
 
 ###Krav på webbplatsen
 - Alla sidor ska hämta sidhuvud och sidfot från header.php och footer.php

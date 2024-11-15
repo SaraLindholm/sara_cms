@@ -1,4 +1,4 @@
-<?php include 'helper.php' ?>
+<?php include 'helper.php'; $number = $_POST['number']; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,13 +15,7 @@
 <div class="container text-start">
   <div class="row align-items-start">
       <div class="col border-start">
-        <?php  sl_use_subtration(4); ?>
-      </div>
-      <div class="col border-start">
-        <?php  sl_use_subtration(8); ?>
-      </div>
-      <div class="col border-start">
-        <?php  sl_use_subtration(9); ?>
+        <?php  sl_use_subtration($number); ?>
       </div>
   </div></div>
 

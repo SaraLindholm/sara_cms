@@ -1,5 +1,4 @@
 <?php
-
 function sl_debug_($variabelSomSkaDumpas)
 {
   echo "<pre>";
@@ -85,6 +84,19 @@ $greetings = [
 
 echo "<h5> $greetings[$index] $name!</h5>";
 };
+ function sl_timeStamp_from_date($dateInput = null) {
+  if (!empty($dateInput)) {
+      // Konvertera det inmatade datumet till en tidsstämpel
+      return strtotime($dateInput);
+  }
+  // Om inget datum skickas, returnera tidsstämpeln för dagens datum
+  return time();
+};
+
+
+
+
+
 
 function sl_get_daily_date() {
   $currentDate = date("j");
@@ -92,7 +104,6 @@ function sl_get_daily_date() {
 
   // Hämtar aktuell veckodagindex 0-6
   $currentDay = date("w");
-
   // skapar en array som kan användas för att omvandla veckodagsindex till aktuell dag
   $weekdaysArray = [
     "Söndag",
@@ -101,11 +112,12 @@ function sl_get_daily_date() {
     "Onsdag",
     "Torsdag",
     "Fredag",
-    "Lördag" ];
+    "Lördag" ,];
   //skapar en variabel som består av arrayen och väljer aktuell dah beroende på index
   $day = $weekdaysArray[$currentDay];
 
   // echo "<h3> $greetings[$index]</h3>";
   echo  "<p> Idag är det " . $day  . " den" . date("j F") . "</p>";
   echo  "<p>Den " . date("j F") . " är ett " . $evenOrOddDate . " datum.</p>";
+
 }

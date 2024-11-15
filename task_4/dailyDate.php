@@ -1,4 +1,21 @@
-<?php include 'helper.php' ?>
+<?php include 'helper.php';
+  $timestamp =  sl_timeStamp_from_date($_POST['date'] ?? null);
+
+  // Hämta dagens veckodag (t.ex. Måndag, Tisdag)
+  $day = date('l', $timestamp);
+
+  // Hämta dagens datum i formatet dag månad
+  $day = date('j F' , $timestamp);
+
+  $evenOrOddDate = (date('j', $timestamp) % 2 != 0);
+
+
+
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+$date = $_POST['date'];?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +27,24 @@
 <body class="bg-success p-2 bg-opacity-50">
 <?php sl_get_header();
 ?>
-<div class="container d-flex justify-content-center mt-5">
+<div class="container justify-content-center mt-5">
 <div class="col-md-6">
+
   <h5>Dagens datum</h5>
   <?php
- sl_get_daily_date()
+  echo  "<p> Idag är det " . $day . ", det är ett " . ($evenOrOddDate ? "udda" : "jämnt" ) . " datum.</p>";
+//  sl_get_daily_date();
+//  sl_timeStamp_from_date();
   ?>
   </div>
+  <form action="dailyDate.php" method="post">
+  <div class="mb-3 col-md-2">
+    <label for="date" class="form-label">Välj ett datum</label>
+      <input type="date" class="form-control" id="date" name="date">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
   </div>
 </body>
 <?php sl_get_footer() ?>
