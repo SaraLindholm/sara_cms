@@ -14,7 +14,15 @@
 </div>
 <div class="container text-start">
   <div class="row align-items-start">
-      <div class="col border-start">
+  <form action="division.php" method="post">
+        <div class="mb-3 col-md-2">
+        <label for="number" class="form-label">Ange siffervärde</label>
+          <input type="number" class="form-control" id="number" name="number" maxlength="1">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+      <div class="col">
         <?php  sl_use_division($number); ?>
       </div>
   </div></div>

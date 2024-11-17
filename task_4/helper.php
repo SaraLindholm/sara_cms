@@ -20,47 +20,10 @@ function sl_get_navbar() {
   }
 };
 
-
 function sl_get_footer() {
   include('parts/footer.php');
 };
 
-function sl_use_multiplication($number) {
-  echo "Multiplikations-tabellen med siffran " . $number . "<ul>";
-  for($x = 1; $x <= 10; $x ++) {
-  $sum = $x * $number;
-  echo "<li> $number * $x = $sum </li><br>";
-  }
-  echo "</ul>";
-
-};
-function sl_use_division($number) {
-  echo "Division med siffran $number <ul>";
-  for($x = 1; $x <= 10; $x ++) {
-  $sum = $x % $number;
-  echo "<li> $number / $x = $sum </li><br>";
-  }
-  echo "</ul>";
-
-};
-function sl_use_addition($number) {
-  echo "Additions med siffran $number <ul>";
-  for($x = 1; $x <= 10; $x ++) {
-  $sum = $x + $number;
-  echo "<li> $number + $x  = $sum </li><br>";
-  }
-  echo "</ul>";
-
-};
-
-function sl_use_subtration($number) {
-  echo "Subtraktion med siffran $number <ul>";
-  for ($x =1; $x <= 10; $x ++) {
-    $sum = $x - $number;
-    echo "<li> $number - $x = $sum </li><br>";
-  }
-  echo "</ul>";
-};
  function sl_greeting($name = "JaneDoe") {
 //hämtar aktuell klockslag..
 $currentTime = date("H");
@@ -82,7 +45,7 @@ $greetings = [
   "God kväll! Hoppas du haft en produktiv dag "
 ];
 
-echo "<h5> $greetings[$index] $name!</h5>";
+echo "<h3> $greetings[$index] $name!</h3>";
 };
  function sl_timeStamp_from_date($dateInput = null) {
   if (!empty($dateInput)) {
@@ -92,11 +55,6 @@ echo "<h5> $greetings[$index] $name!</h5>";
   // Om inget datum skickas, returnera tidsstämpeln för dagens datum
   return time();
 };
-
-
-
-
-
 
 function sl_get_daily_date() {
   $currentDate = date("j");
@@ -120,4 +78,42 @@ function sl_get_daily_date() {
   echo  "<p> Idag är det " . $day  . " den" . date("j F") . "</p>";
   echo  "<p>Den " . date("j F") . " är ett " . $evenOrOddDate . " datum.</p>";
 
-}
+};
+
+
+function sl_use_multiplication($number) {
+  echo "Multiplikations-tabellen med siffran $number <ul>";
+  for($x = 1; $x <= 10; $x ++) {
+  $sum = $x * $number;
+  echo "<li> $number * $x = $sum </li><br>";
+  }
+  echo "</ul>";
+
+};
+function sl_use_division($number) {
+  echo "Division med siffran $number <ul>";
+  for($x = 1; $x <= 10; $x ++) {
+  $sum = $x % $number;
+  echo "<li> $number / $x = $sum </li><br>";
+  }
+  echo "</ul>";
+
+};
+function sl_use_addition($number) {
+  echo "Addition med siffran $number <ul>";
+  for($x = 1; $x <= 10; $x ++) {
+  $sum = $x + $number;
+  echo "<li> $number + $x  = $sum </li><br>";
+  }
+  echo "</ul>";
+
+};
+
+function sl_use_subtration($number) {
+  echo "Subtraktion med siffran $number <ul>";
+  for ($x =1; $x <= 10; $x ++) {
+    $sum = $x - $number;
+    echo "<li> $number - $x = $sum </li><br>";
+  }
+  echo "</ul>";
+};

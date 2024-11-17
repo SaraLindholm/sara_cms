@@ -8,12 +8,6 @@
 de olika undersidorna enligt följande:
 
 
-
-###Undersida 1
-Komplettera undersida 1 med en datumväljare. När användaren väljer ett valfritt datum ska texten
-anpassas efter det inmatade datumet istället för att visa dagens datum. (Till exempel om användaren
-väljer den 21 december ska texten bli “den 21 december är ett udda datum”).
-
 ###Undersida 2
 //Lägg in ett formulär där användaren kan välja vilken multiplikationstabell som ska skrivas ut. Till
 exempel om användaren anger “5” i inmatningsfältet ska 5:ans multiplikationstabell skrivas ut vid
@@ -28,16 +22,11 @@ formatering och valuta. Exempelvis: “Det beräknade elpriset blir 920 kronor�
 formulär och utskrift blir användarvänlig.
 Symbolisera gärna motsvarande hur många hästar som behöver jobba hur många timmar för samma wH.
 
-// ###Sidhuvud och sidfot
-Lämnas som de var i föregående övningsuppgift eller utvecklas efter behov.//klart
 
-###Krav på webbplatsen
-- Alla sidor ska hämta sidhuvud och sidfot från header.php och footer.php
 
 - Dynamiskt innehåll skapas endast med PHP, ej med JavaScript eller liknande. (JavaScript kan
 dock användas för ytterligare interaktivitet såsom utfällbara menyer och liknande).
 
-- Den genomgående grafiska profilen gäller fortsatt för hela webbplatsen.
 
 - Skydda webbplatsen från intrång och skadlig kod! Säkra alla inmatningsfält i dina formulär
 från så kallade “injections” med skadlig kod. (Tips! HTML-taggar vill vi vanligtvis inte tillåta i

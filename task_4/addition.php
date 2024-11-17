@@ -15,6 +15,14 @@ $number = $_POST['number'];?>
 </div>
 <div class="container text-start">
   <div class="row align-items-start">
+  <form action="addition.php" method="post">
+        <div class="mb-3 col-md-2">
+        <label for="number" class="form-label">Ange tabell</label>
+          <input type="number" class="form-control" id="number" name="number" maxlength="1">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
       <div class="col border-start">
         <?php  sl_use_addition($number); ?>
       </div>

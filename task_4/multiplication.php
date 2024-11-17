@@ -1,6 +1,4 @@
-<?php include 'helper.php';
-$number = $_POST['number'];
-?>
+<?php include 'helper.php'; $number = $_POST['number']; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +27,6 @@ $number = $_POST['number'];
         <?php  sl_use_multiplication($number); ?>
       </div>
   </div></div>
-
 </body>
 <?php sl_get_footer() ?>
 </html>
