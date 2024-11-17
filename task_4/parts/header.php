@@ -20,19 +20,22 @@
           <li class="nav-item">
             <a class="nav-link" href="dailyDate.php">Dagens Datum</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="energyPrice.php">El-prismätare</a>
+          </li>
+
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Matematik
           </a>
+          <!-- gör om detta med hjälp av loop -->
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="addition.php">Addition</a></li>
             <li><a class="dropdown-item" href="division.php">Division</a></li>
             <li><a class="dropdown-item" href="multiplication.php">Multiplikation</a></li>
             <li><a class="dropdown-item" href="subtraction.php">Subtraktion</a></li>
-
           </ul>
         </li>
-
         </ul>
     </div>
   </div>

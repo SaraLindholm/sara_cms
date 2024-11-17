@@ -1,7 +1,6 @@
 <?php include 'helper.php';
 
 $name = $_POST['name'];
-
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +12,7 @@ $name = $_POST['name'];
 <body class="bg-success bg-opacity-50">
 <?php
 sl_get_header();
-sl_get_navbar()
+sl_get_navbar();
 ?>
   <div class="container d-flex justify-content-center mt-5">
     <div class="mx-auto">
@@ -25,10 +24,8 @@ sl_get_navbar()
           <input type="text" class="form-control" id="name" name="name" placeholder="Ditt namn">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
+    </div>
       </form>
     </div>
   </div>
-</body>
-<?php sl_get_footer() ?>
-</html>
+<?php sl_get_footer(); ?>
