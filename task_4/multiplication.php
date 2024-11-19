@@ -1,5 +1,5 @@
 <?php include 'helper.php';
-$number = $_POST['number'];
+$number = isset($_POST['number']) ? $_POST['number'] : 13;
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -13,10 +13,14 @@ function sl_get_header()
 
 function sl_get_navbar()
 {
-    $navItems = ['Start', 'Dagens Datum', 'Matematik'];
-    foreach ($navItems as $navTitles) {
-        "<br>
-    <a href='$navItems'>$navTitles</a> ";
+    $navItems = [
+        'index.php' => 'Start',
+        'dailyDate.php' => 'Dagens Datum',
+        'multiplication.php' => 'Matematik',
+        'energyPrice.php' => 'Elpris-mätare',
+    ];
+    foreach ($navItems as $url => $navTitle) {
+        echo "<a class='navbar-brand' href='$url'>$navTitle</a>";
     }
 }
 
@@ -29,7 +33,6 @@ function sl_greeting($name = 'JaneDoe')
 {
     //hämtar aktuell klockslag..
     $currentTime = date('H');
-
     if ($currentTime <= 10) {
         $index = 0;
     } elseif ($currentTime <= 12) {
@@ -92,6 +95,7 @@ function sl_elPrice_consumption($price, $consumption)
 
 function sl_use_multiplication($number)
 {
+    $number = (int) $number;
     echo "Multiplikations-tabellen med siffran $number <ul>";
     for ($x = 1; $x <= 10; $x++) {
         $sum = $x * $number;
@@ -101,6 +105,7 @@ function sl_use_multiplication($number)
 }
 function sl_use_division($number)
 {
+    $number = (int) $number;
     echo "Division med siffran $number <ul>";
     for ($x = 1; $x <= 10; $x++) {
         $sum = $x % $number;
@@ -110,6 +115,7 @@ function sl_use_division($number)
 }
 function sl_use_addition($number)
 {
+    $number = (int) $number;
     echo "Addition med siffran $number <ul>";
     for ($x = 1; $x <= 10; $x++) {
         $sum = $x + $number;
@@ -120,6 +126,7 @@ function sl_use_addition($number)
 
 function sl_use_subtration($number)
 {
+    $number = (int) $number;
     echo "Subtraktion med siffran $number <ul>";
     for ($x = 1; $x <= 10; $x++) {
         $sum = $x - $number;
@@ -127,3 +134,6 @@ function sl_use_subtration($number)
     }
     echo '</ul>';
 }
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
