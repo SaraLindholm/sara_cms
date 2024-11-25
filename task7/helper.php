@@ -20,7 +20,7 @@ function sl_get_navbar()
     ];
 
     foreach ($navItems as $url => $navTitle) {
-        echo "<a href='$url'>$navTitle</a>";
+        echo "<a class='navbar-brand' href='$url'>$navTitle</a>";
     }
 }
 
