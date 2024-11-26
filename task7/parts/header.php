@@ -8,9 +8,9 @@
 
 </head>
 <body>
-  <header class="bg-warning bg-opacity-50">
+  <header class="bg-primary bg-opacity-50  border-bottom solid black">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container bg-primary border-bottom" style="height: 70px">
+      <div class="container" style="height: 70px">
         <?php sl_get_navbar(); ?>
       </div>
     </nav>

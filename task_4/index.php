@@ -3,7 +3,7 @@
 $name = isset($_POST['name']) ? $_POST['name'] : '';
 ?>
 <?php sl_get_header(); ?>
-  <div class="container d-flex justify-content-center mt-5">
+  <div class="container d-flex mt-5">
     <div class="mx-auto">
     <?php sl_greeting($name); ?>
       <!-- <h4>Dagens trevliga hälsning</h4><br> -->
