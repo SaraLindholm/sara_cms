@@ -18,7 +18,7 @@ Sidor på webbplatsen
 Har en unik layout från övriga sidor, i övrigt fritt att skapa.
 
 - Nyhetssidan
-Listar alla nyheter med ett kort utdrag ur artikelns text och dess bild i miniatyr.
+Listar alla nyheter med ett kort utdrag ur artikelns text och dess bild i miniatyr. (fixa miniatyr=)
 
 - Sidan för enskild nyhet
 Presenterar artikelns rubrik, dess bild och hela artikelns text. Datum för artikelns publicering och
