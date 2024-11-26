@@ -9,8 +9,29 @@
 <body>
 
 </body>
-  <footer class="bg-warning ps-3 p-3 bg-opacity-50 border-bottom">
-    <div class="container text-center">
+<footer class="bg-secondary ps-3 p-3 bg-opacity-50 border-bottom">
+
+  <div class="hstack gap-3">
+    <div class="p-2">First item
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+    </div>
+    <div class="p-2">
+      Second item
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+    </div>
+    <div class="p-2">Third item
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- <div class="container text-center">
       <div class="row align-items-end">
         <div class="col">
           One of three columns
@@ -37,6 +58,6 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
 </footer>
 </html>
