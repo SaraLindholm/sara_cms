@@ -17,14 +17,14 @@ Sidor på webbplatsen
 ###Krav på sidtyperna:
 
 -   Startsidan
-    Har en unik layout från övriga sidor, i övrigt fritt att skapa. (KLART)
+    ~~Har en unik layout från övriga sidor, i övrigt fritt att skapa. (KLART)~~
 
 -   Nyhetssidan
-    Listar alla nyheter med ett kort utdrag ur artikelns text och dess bild i miniatyr. (KLART)
+    ~~Listar alla nyheter med ett kort utdrag ur artikelns text och dess bild i miniatyr. (KLART)~~
 
--   Sidan för enskild nyhet
-    Presenterar artikelns rubrik, dess bild och hela artikelns text. Datum för artikelns publicering och
-    nyhetskategori ska också skrivas ut.
+-  ~~ Sidan för enskild nyhet~~
+   ~~ Presenterar artikelns rubrik, dess bild och hela artikelns text. Datum för artikelns publicering och~~
+   ~~ nyhetskategori ska också skrivas ut.~~
 
 -   Om oss-sidan
     ~~En enkel beskrivande text om nyhetsbyrån och eventuellt en bild.(KLART)~~

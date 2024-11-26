@@ -167,6 +167,10 @@ function sl_get_oneNews()
         '</p>
             </div>
         </div>
+<a href="nyheter.php">
+    <button class="button">Gå tillbaka</button></a>
+
+
     </div>';
 }
 
