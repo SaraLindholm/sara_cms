@@ -17,7 +17,7 @@ Sidor på webbplatsen
 ###Krav på sidtyperna:
 
 -   Startsidan
-    Har en unik layout från övriga sidor, i övrigt fritt att skapa.
+    Har en unik layout från övriga sidor, i övrigt fritt att skapa. (KLART)
 
 -   Nyhetssidan
     Listar alla nyheter med ett kort utdrag ur artikelns text och dess bild i miniatyr. (KLART)
@@ -27,7 +27,9 @@ Sidor på webbplatsen
     nyhetskategori ska också skrivas ut.
 
 -   Om oss-sidan
-    En enkel beskrivande text om nyhetsbyrån och eventuellt en bild.
+    En enkel beskrivande text om nyhetsbyrån och eventuellt en bild.(KLART)
+
+
     Kontaktsidan
     Ett kontaktformulär ska finnas på sidan med inmatningsfält för minst besökarens namn, e-post och
     meddelande. Ingen funktionalitet behöver kopplas till formuläret i det här skedet - men det är

@@ -8,9 +8,13 @@
 
 </head>
 <body>
-  <header class="bg-primary bg-opacity-50  border-bottom solid black">
+  <header class="border-bottom solid black">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container" style="height: 70px">
+      <a class="navbar-brand" href="#">
+      <img src="/src/navImg.svg" alt="navImg" width="auto" height="55">
+    </a>
+
         <?php sl_get_navbar(); ?>
       </div>
     </nav>

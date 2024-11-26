@@ -4,7 +4,7 @@ include 'helper.php';
 sl_get_header();
 ?>
 
-<div class="container d-flex flex-wrap">
+<div class="container d-flex flex-wrap" style="width: 100%">
   <div class="left d-flex flex-wrap">
     <div class="card">
       <a target="_blank" href="/src/car.png">
