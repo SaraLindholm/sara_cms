@@ -42,10 +42,16 @@ header {
 }
 
 /* Styling kopplat till index sidan och dess bild */
+.index-container {
+    background-color: #e5e1da;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('/src/hero.png');
-    margin-top: 20px;
+
     width: 100%;
     height: 50%;
     background-position: center;
@@ -75,14 +81,27 @@ header {
     cursor: pointer;
 }
 /* används på nyheter (left/right/card) */
+
+.news-container {
+    display: flex; /* Aktiverar flexbox */
+    justify-content: space-between; /* Låter elementen fylla tillgängligt utrymme */
+    align-items: flex-start; /* Justerar från toppen */
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
 .left {
     background-color: #e5e1da;
-    flex: 1;
+    flex: 3;
     width: 70%;
+    display: flex; /* Aktiverar flexbox */
+    flex-wrap: wrap; /* Tillåter att barnen radbryts */
+    justify-content: center; /* Centrerar horisontellt */
+    margin: 0 auto;
 }
 
 .card {
-    width: 65%;
+    width: 55%;
     height: auto;
     margin: 10px;
     align-items: flex-end;
@@ -119,7 +138,7 @@ h3 a:hover {
 }
 
 .right {
-    flex: 0 0 200px;
+    flex: 1;
     background-color: #e5e1da;
 }
 
@@ -143,8 +162,7 @@ h3 a:hover {
     background-color: #e5e1da;
 }
 
-.about-us-content,
-.contact-content {
+.about-us-content {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -156,4 +174,8 @@ h3 a:hover {
     max-width: 600px; /* Limits the maximum width of the image */
     border-radius: 8px; /* Optional: adds rounded corners to the image */
     margin-top: 10px;
+}
+
+.contact-content {
+    width: 60%;
 }

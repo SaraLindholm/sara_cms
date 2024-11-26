@@ -3,8 +3,7 @@
 include 'helper.php';
 sl_get_header();
 ?>
-
-
+<div class="index-container">
 <div class="hero-image">
   <div class="hero-info">
     <h1>Välkommen till Nyheter i Väst</h1>
@@ -13,7 +12,5 @@ sl_get_header();
     <button class="button">Kliv på</button></a>
   </div>
 </div>
-
-
-
+</div>
 <?php sl_get_footer(); ?>

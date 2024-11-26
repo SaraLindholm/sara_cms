@@ -3,10 +3,10 @@
 include 'helper.php';
 sl_get_header();
 ?>
-
-<div class="container d-flex flex-wrap" style="width: 100%">
+<div class="news-container-fluid d-flex flex-wrap" style="padding: 0;">
   <div class="left d-flex flex-wrap">
-    <div class="card">
+    <?php sl_get_news(); ?>
+    <!-- <div class="card">
       <a target="_blank" href="/src/car.png">
       <img src="/src/car.png" class="card-img-top" alt="car interiour"></a>
       <div class="card-body">
@@ -49,9 +49,9 @@ sl_get_header();
         <h3 class="card-title"><a href="#">Mars Koloni Färdig inom 10 år:</a></h3>
           <h6 class="card-subtitle mb-2 text-body-secondary">date</h6>
         <p class="card-text">Forskare tror att människor kan bosätta sig på Mars inom ett decennium. Forskningen om hållbara bostäder och resurshantering går snabbt framåt.</p>
-      </div>
+      </div> -->
     </div>
-  </div>
+
   <div class="right">
   <div class="cardRight">
       <div class="card-body">

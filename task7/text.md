@@ -27,7 +27,7 @@ Sidor på webbplatsen
     nyhetskategori ska också skrivas ut.
 
 -   Om oss-sidan
-    En enkel beskrivande text om nyhetsbyrån och eventuellt en bild.(KLART)
+    ~~En enkel beskrivande text om nyhetsbyrån och eventuellt en bild.(KLART)~~
 
 
     Kontaktsidan
