@@ -152,6 +152,7 @@ h3 a:hover {
     min-height: 200px;
 }
 
+.not-found-container,
 .about-us-container,
 .contact-container {
     display: flex;
@@ -161,7 +162,7 @@ h3 a:hover {
     text-align: center; /* Centers the text */
     background-color: #e5e1da;
 }
-
+.not-found-content,
 .about-us-content {
     width: 70%;
     display: flex;
